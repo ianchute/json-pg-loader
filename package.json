@@ -1,0 +1,23 @@
+{
+  "name": "json-pg-loader",
+  "version": "1.0.0",
+  "description": "Conveniently loads data from an API endpoint returning an array of objects to a new Postgre table.",
+  "main": "load.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ianchute/json-pg-loader.git"
+  },
+  "author": "Ian Chu Te",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ianchute/json-pg-loader/issues"
+  },
+  "homepage": "https://github.com/ianchute/json-pg-loader",
+  "dependencies": {
+    "pg": "^6.1.0",
+    "underscore": "^1.8.3"
+  }
+}
