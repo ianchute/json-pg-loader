@@ -60,10 +60,10 @@ function load(endpoint, db, callback) {
     const query = `
       DROP TABLE IF EXISTS ${context.tablename};
       CREATE TABLE ${context.tablename} (
-        ${keys.map(key => `${key} ${TYPEMAP[typeof context.data[0][key]]}`).join(',\n')}
+        ${keys.map(key => `${key.replace(/\s+/g, '_')} ${TYPEMAP[typeof context.data[0][key]]}`).join(',\n')}
       );
     `
-    // console.log(query)
+
     client.query(query, [], populateTable)
 
   }
